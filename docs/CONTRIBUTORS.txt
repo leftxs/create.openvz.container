@@ -1,0 +1,4 @@
+CONTRIBUTORS
+============
+Maarten te Paske
+Sven Strack

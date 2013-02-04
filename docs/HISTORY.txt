@@ -1,0 +1,7 @@
+CHANGELOG
+==========
+
+04-02-2013 - svx
+    * adopted script
+    * add ram and swap [this is done via vswap function and only from/for rhel6-based openvz kernel]
+    * cleanup whitespaces in script

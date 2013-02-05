@@ -27,8 +27,7 @@ You could also add it to your path, if you want
 What is does
 ------------
 
-- The script will check the content of your '$VZDIR/template/cache' dir and will
-display it as list, now you can choose one [copy and paste]
+- Will check the content of your '$VZDIR/template/cache' dir and will display it as list, now you can choose one [copy and paste]
 
 - Ask for a HOstname [fqdn]
 

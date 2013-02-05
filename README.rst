@@ -38,4 +38,3 @@ display it as list, now you can choose one [copy and paste]
 
 - Ask if you want to create the container [y/N]
 
-script to create openvz containers

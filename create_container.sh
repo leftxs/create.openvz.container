@@ -37,6 +37,8 @@ read -p "Enter hostname (fqdn):  " VZHOST
 read -p "Enter IP address:       " VZIP
 read -p "Ram: like 512M or 1G	 " VZRAM
 read -p "Swap: like 1G or 2G	 " VZSWAP
+read -p "Disk qouta: like 1G or 2G" DISKQOUTA
+read -p "Disk boost: like 1G or 2G" DISKBOOST
 read -p "Create container? [y/N] " CREATE
 
 case "$CREATE" in
@@ -47,7 +49,8 @@ case "$CREATE" in
                 $VZCTL set "$NEWID" --hostname "$VZHOST" --save && \
                 $VZCTL set "$NEWID" --nameserver 8.8.8.8 --save && \
                 $VZCTL set "$NEWID" --ram "$VZRAM" --swap "$VZSWAP" --save && \
-		$VZCTL set "$NEWID" --onboot yes --save && \
+	        $VZCTL set "$NEWID" --diskspace "$DISKQOUTA":"$DISKBOOST" --save && \
+                $VZCTL set "$NEWID" --onboot yes --save && \
                 echo
                 echo "Container $NEWID has been created. You can start it like this:"
                 echo "vzctl start $NEWID"

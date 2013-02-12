@@ -1,5 +1,7 @@
 CHANGELOG
 ==========
+12-02-2013 - svx
+    * add disk size/qouta to script
 
 04-02-2013 - svx
     * adopted script

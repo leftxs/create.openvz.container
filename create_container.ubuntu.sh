@@ -44,7 +44,7 @@ fi
 #case "$CREATE" in
 #        y | yes | Y | YES | Yes )
 
-                $VZCTL create "$NEWID" --ostemplate "ubuntu-vmd-12.04-x86_64.tar.gz" && \
+                $VZCTL create "$NEWID" --ostemplate "ubuntu-vmd-12.04-x86_64" && \
                 $VZCTL set "$NEWID" --ipadd "10.1.1.66" --save && \
                 $VZCTL set "$NEWID" --hostname "ubuntu12-04-installer-test" --save && \
                 $VZCTL set "$NEWID" --nameserver 8.8.8.8 --save && \
@@ -55,11 +55,11 @@ fi
                 echo "Container $NEWID has been created. You can start it like this:"
                 echo "vzctl start $NEWID"
                 echo
-                ;;
+                #;;
 
-        * )
-                echo "Not creating container $NEWID..."
-                echo
-                ;;
-esac
+        #* )
+               # echo "Not creating container $NEWID..."
+               # echo
+               # ;;
+#esac
 

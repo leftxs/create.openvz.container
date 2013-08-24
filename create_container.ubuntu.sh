@@ -55,9 +55,10 @@ fi
                 echo "Container $NEWID has been created. You can start it like this:"
                 echo "vzctl start $NEWID"
                 echo
-                
                 echo "Starting new Container"
                 vzctl start $NEWID
+                echo "Changing login shell to bash"
+                vzctl exec $NEWID chsh -s /bin/bash plone
                 #;;
 
         #* )

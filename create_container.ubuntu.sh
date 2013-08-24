@@ -45,7 +45,7 @@ fi
 #        y | yes | Y | YES | Yes )
 
                 $VZCTL create "$NEWID" --ostemplate "ubuntu-vmd-12.04-x86_64" && \
-                $VZCTL set "$NEWID" --ipadd "10.1.1.66" --save && \
+                $VZCTL set "$NEWID" --ipadd "10.1.1.169" --save && \
                 $VZCTL set "$NEWID" --hostname "ubuntu12-04-installer-test" --save && \
                 $VZCTL set "$NEWID" --nameserver 8.8.8.8 --save && \
                 $VZCTL set "$NEWID" --ram "1G" --swap "1G" --save && \

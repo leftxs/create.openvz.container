@@ -44,8 +44,8 @@ fi
 #case "$CREATE" in
 #        y | yes | Y | YES | Yes )
 
-                $VZCTL create "$NEWID" --ostemplate "$VZTMPLT" && \
-                $VZCTL set "$NEWID" --ipadd "centos-6-x86_64" --save && \
+                $VZCTL create "$NEWID" --ostemplate "centos-6-x86_64" && \
+                $VZCTL set "$NEWID" --ipadd "10.1.1.169" --save && \
                 $VZCTL set "$NEWID" --hostname "centos6-test-installer" --save && \
                 $VZCTL set "$NEWID" --nameserver 8.8.8.8 --save && \
                 $VZCTL set "$NEWID" --ram "1G" --swap "2G" --save && \

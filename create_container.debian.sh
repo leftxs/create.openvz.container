@@ -45,7 +45,7 @@ fi
 #        y | yes | Y | YES | Yes )
 
                 $VZCTL create "$NEWID" --ostemplate "debian-7.0-x86_64" && \
-                $VZCTL set "$NEWID" --ipadd "$VZIP" --save && \
+                $VZCTL set "$NEWID" --ipadd "10.1.1.169" --save && \
                 $VZCTL set "$NEWID" --hostname "debian7-test-installer" --save && \
                 $VZCTL set "$NEWID" --nameserver 8.8.8.8 --save && \
                 $VZCTL set "$NEWID" --ram "1G" --swap "2G" --save && \

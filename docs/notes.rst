@@ -3,7 +3,7 @@ Notes:
 
 *This is for openvz not for virtualbox !!*
 
-In case we want to create a fresh pari of ssh-keys on firt boot we do the followig:
+In case we want to create a fresh pair of ssh-keys on first boot we do the followig [Ubuntu12.04]:
 
 Generate a unique set of ssh (host) keys.::
         rm -f /etc/ssh/ssh_host_*

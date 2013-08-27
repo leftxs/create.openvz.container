@@ -66,3 +66,5 @@ echo
 echo "Starting new Container"
 vzctl start $NEWID >> "$INSTALL_LOG" 2>&1
 
+# Todo: if script was runningthorugh without any error, upload logfile to
+# buildmaster, if there were erros send mail and tell them to check errors
